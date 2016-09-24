@@ -1,0 +1,12 @@
+# src/CatalogBundle/Resources/config/doctrine/Category.orm.yml
+CatalogBundle\Entity\Category:
+    type: entity
+    table: category
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            length: 100

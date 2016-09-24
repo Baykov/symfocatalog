@@ -1,0 +1,7 @@
+{# src/Catalog/CatalogBundle/Resources/views/Category/all.html.twig #}
+
+<ul id="categories">
+    {% for item in categories %}
+        <li><a href="/{{ item.getName() }}">{{ item.getName() }}</a></li>
+    {% endfor %}
+</ul>

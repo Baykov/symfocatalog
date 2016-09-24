@@ -1,0 +1,8 @@
+catalog_catalog:
+    resource: "@CatalogCatalogBundle/Resources/config/routing.yml"
+    prefix:   /
+CatalogCatalogBundle_category:
+    path:   /{name}/
+    defaults: { _controller: "CatalogCatalogBundle:Category:show" }
+    requirements:
+         methods:  GET
